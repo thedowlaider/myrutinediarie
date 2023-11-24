@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  background-color: white;
+  border-radius: 15px;
+  width: 400px;
+}
+main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+main section header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+main section header h1 {
+  font-size: 2rem;
+  transition: 200ms ease-in;
+}
+main section header h1:hover {
+  color: rgba(45, 49, 49, 0.774);
+  transform: scale(0.9);
+}
+main section .container-cards {
+  width: 300px;
+  height: 436px;
+  overflow: hidden;
+}
+main section .container-cards .cards {
+  border: 1px solid black;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  padding: 20px;
+  width: 300px;
+  transition: opacity 0.5s ease, height 0.5s ease;
+}
+main section .container-cards .cards p {
+  margin: 2px 1px;
+  font-weight: 100;
+}
+main section .container-cards .cards .hora {
+  border-top: 1px solid black;
+}
+main section .container-cards .cards:hover {
+  background-color: gray;
+  transition: 200ms ease-in-out;
+}
+main section .container-cards .cards:active {
+  opacity: 0;
+  height: 0;
+}
+main section .container-cards .cards:not(:last-child) {
+  margin-bottom: 10px;
+}/*# sourceMappingURL=styles.css.map */
